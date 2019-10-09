@@ -1,7 +1,6 @@
 #include "Display.h"
 const int LDR = A2;
 const int GreenLED = 5;
-
 enum State {
   LIGHTED, SHADED
 };
@@ -15,16 +14,16 @@ int number = 0;
   
 
 void setup() {
-  Serial.begin(9600);
+
   pinMode(LDR,INPUT);
   pinMode(GreenLED,OUTPUT);
 }
 
 
 void loop() {
-bool checker = false;
-checker = LDRTHRES();
-if(checker == true){
+bool State_checker = false;
+State_checker = LDRTHRES();
+if(State_checker == true){
     digitalWrite(GreenLED,HIGH);
     delay(150);
     digitalWrite(GreenLED, LOW);
@@ -41,8 +40,6 @@ bool LDRTHRES(){
 
   bool returner = false;
   int val = analogRead(LDR);
-  Serial.println(val);
-  Serial.println(val);
   if ( state == LIGHTED && val < Dark_Threshold){
     returner = true;
     state = SHADED;
