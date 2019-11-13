@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "light bridge UI", "light bridge UI\light bridge UI.csproj", "{BD13E1F6-131D-44B6-BED4-A5894C46B029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD13E1F6-131D-44B6-BED4-A5894C46B029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD13E1F6-131D-44B6-BED4-A5894C46B029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD13E1F6-131D-44B6-BED4-A5894C46B029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD13E1F6-131D-44B6-BED4-A5894C46B029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED6114CE-3D11-4993-9234-88F218AB1541}
+	EndGlobalSection
+EndGlobal
