@@ -13,10 +13,11 @@ namespace light_bridge_UI
     public partial class Form1 : Form
     {
         int Num = 0;
+        DataSender dataSender;
         public Form1()
         {
             InitializeComponent();
-       
+            dataSender = new DataSender("145.93.100.241", 8081);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,11 +52,11 @@ namespace light_bridge_UI
                     this.panel1.BackColor = Color.PaleGreen;
                     this.label1.Text = "Pizza is Ready ^^"+ Num;
                     Thread.Sleep(250);
-
+                    dataSender.sendMessage("product_ready");
 
                 }
 
-               // this.label1.Text = "In the Oven^^";
+               
 
 
             }
